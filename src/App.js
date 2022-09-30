@@ -7,7 +7,6 @@ import './style.css';
 export default function App() {
   const [loading, setLoading] = useState(true);
   const [tours, setTours] = useState([]);
-
   const fetchTours = async () => {
     setLoading(true);
     try {
@@ -20,7 +19,6 @@ export default function App() {
       console.log(error);
     }
   };
-
   useEffect(() => {
     fetchTours();
   }, []);
@@ -33,6 +31,7 @@ export default function App() {
   }
   return (
     <main>
+      dfgdf
       <Tours tours={tours} />
     </main>
   );

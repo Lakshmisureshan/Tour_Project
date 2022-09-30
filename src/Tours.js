@@ -7,14 +7,12 @@ const Tours = ({ tours }) => {
         <h2> Ours Tours </h2>
         <div className="underline"></div>
       </div>
-
       <div>
-
-{tours.map(()=>{
-reurn(<Tour>)
-
-}}
-
+        {tours.map((tour) => {
+          console.log(tour);
+          return <Tour key={tour.id} {...tour} />;
+        })}
+      </div>
     </section>
   );
 };

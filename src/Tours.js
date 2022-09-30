@@ -1,5 +1,21 @@
 import React, { useState } from 'react';
-const Tours = () => {
-  return <h2>Single Tour Component</h2>;
+import Tour from './Tour';
+const Tours = ({ tours }) => {
+  return (
+    <section>
+      <div className="title">
+        <h2> Ours Tours </h2>
+        <div className="underline"></div>
+      </div>
+
+      <div>
+
+{tours.map(()=>{
+reurn(<Tour>)
+
+}}
+
+    </section>
+  );
 };
 export default Tours;
